@@ -69,7 +69,7 @@ int main(){
     break;
    case 8:
    fahrenheit(value);
-   cout << value << " Fahrenheit to Celsius is: " << fahrenheit(value);
+   cout << value << " Fahrenheit to Celsius is: " << fahrenheit(value) << " Degrees Celsius";
     break;
  }
  return 0;
@@ -96,6 +96,6 @@ double pound(double value){
 double gallon(double value){
  return value*3.78541;
 };
-double Fahrenheit(double value){
-  return (value-32) * (5/9);
+double fahrenheit(double value){
+ return (value - 32) * 5/9;
 };
