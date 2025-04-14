@@ -9,6 +9,7 @@ double miles(double value);
 double ounce(double value);
 double pound(double value);
 double gallon(double value);
+double fahrenheit(double value);
 
 int main(){
  int option;
@@ -24,7 +25,8 @@ int main(){
  cout << "5. Ounces\n";
  cout << "6. Pound\n";
  cout << "7. Gallons\n";
- cout << "What unit would you like to convert? (1-7): ";
+ cout << "8. Fahrenheit\n";
+ cout << "What unit would you like to convert? (1-8): ";
  cin >> option;
 
 
@@ -65,6 +67,10 @@ int main(){
    gallon(value);
    cout << value << " Gallons to Litres is: " << gallon(value) << " or " << gallon(value)*1000 << " Mililiters";
     break;
+   case 8:
+   fahrenheit(value);
+   cout << value << " Fahrenheit to Celsius is: " << fahrenheit(value);
+    break;
  }
  return 0;
 };
@@ -89,4 +95,7 @@ double pound(double value){
 };
 double gallon(double value){
  return value*3.78541;
+};
+double Fahrenheit(double value){
+  return (value-32) * (5/9);
 };
